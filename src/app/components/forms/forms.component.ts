@@ -9,23 +9,36 @@ import { Location } from 'src/app/types/location.interface';
   templateUrl: './forms.component.html',
   styleUrls: ['./forms.component.scss']
 })
+<<<<<<< HEAD
 export class FormsComponent implements OnInit {
   @Output() submitEvent = new EventEmitter();
   results: Location[] = [];
   filteredResults: Location[] = [];
   formGroup!: FormGroup;
+=======
+export class FormsComponent {
+  results: Location[] = [];
+  filteredResults:Location[] = [];
+  formAgendamento!: FormGroup;
+>>>>>>> 512440af4778d26e5503834c4477f4e80ffda278
 
   constructor(
     private formBuilder: FormBuilder,
     private unitService: GetUnitsService,
     private filterUnitsService: FilterUnitsService) { }
 
+<<<<<<< HEAD
   ngOnInit(): void {
     this.formGroup = this.formBuilder.group({
+=======
+  ngOnInit(){
+    this.formAgendamento = this.formBuilder.group({
+>>>>>>> 512440af4778d26e5503834c4477f4e80ffda278
       hour: '',
       showClosed: true
     })
     this.unitService.getAllUnits().subscribe(data => {
+<<<<<<< HEAD
       this.results = data;
       this.filteredResults = data;
     });
@@ -37,6 +50,19 @@ export class FormsComponent implements OnInit {
     this.unitService.setFilteredUnits(this.filteredResults);
 
     this.submitEvent.emit();
+=======
+      this.results = data.locations;
+      this.filteredResults = data.locations;
+    });
+  }
+
+  onSubmit():void {
+    if(!this.formAgendamento.value.showClosed) {
+      this.filteredResults = this.results.filter(location => location.opened === true)
+    } else {
+      this.filteredResults = this.results;
+    }
+>>>>>>> 512440af4778d26e5503834c4477f4e80ffda278
   }
 
   onClean(): void {
