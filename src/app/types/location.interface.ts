@@ -1,16 +1,16 @@
 export interface Location {
   id: number,
   title: string,
-      content: string,
-      opened: boolean,
-      mask: string,
-      towel: string,
-      fountain: string,
-      locker_room: string,
-      schedules: Schedules[]
+  content: string,
+  opened: boolean,
+  mask: string,
+  towel: string,
+  fountain: string,
+  locker_room: string,
+  schedules: Schedule[]
 }
 
-interface Schedules {
+interface Schedule {
   weekdays: string,
   hour: string
 }
