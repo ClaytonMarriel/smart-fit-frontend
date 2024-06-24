@@ -1,13 +1,34 @@
 # SmartFitFrontend
- - Desenvolvi essa aplicação, em um teste técnico, onde eu tinha que listar as academias abertas durante a pandemia de acordo com os horários pré-estabelecidos.
- Utilizei o framework angular para desenvolver essa aplicação, buscando utilizar as boas práticas, como componentização, responsividade, cleancode..
- Nesse projeto pude aplicar o padrão de projeto Observable para algumas requisições e funções, troca de informações entre componentes utilizando o BehaviorSubject e entre outras funcionalidades que pude explorar no universo do Angular.
+ - This project was developed as a technical test, where I had to list gyms that were open during the pandemic according to pre-established schedules. I used the Angular framework to develop this application, aiming to implement best practices such as componentization, responsiveness, and clean code. In this project, I was able to apply the Observable design pattern for some requests and functions, data exchange between components using BehaviorSubject, among other functionalities that I explored in the Angular ecosystem.
 
- Para rodar o projeto: 
- - Tenha o node.js instalado na sua máquina
- - Angular CLI instalado na máquina
- - Clonar o repositório
- - Instalar as bibliotecas/dependências com npm i
- - iniciar aplicação com ng serve ou npm start.
+# Features
+ * Gym Listings: Display a list of gyms open during the pandemic based on predefined schedules.
+ * Responsive Design: Ensures the application is usable on various devices and screen sizes.
+ * Componentization: Follows Angular best practices for a modular and maintainable codebase.
+ * Reactive Programming: Utilizes Observables and BehaviorSubjects for efficient data handling and component communication.
 
+# Getting Started
+Follow these instructions to set up and run the project on your local machine for development and testing purposes.
+
+# Prerequisites
+Make sure you have the following installed on your machine:
+  * Node.js
+  * Angular CLI
+
+# Installation
+- Clone the repository 
+  https://github.com/ClaytonMarriel/smart-fit-frontend.git
+- Navigate to the project directory
+  cd SmartFitFrontend
+- Install the dependencies:
+  npm install
+
+# Running the Application
+  ng serve or npm start
+
+# Technologies Used
+* Angular: Framework for building web applications.
+* TypeScript: For writing scalable and maintainable code.
+* RxJS: For reactive programming with Observables.
+* Bootstrap: For responsive design and styling.
  
